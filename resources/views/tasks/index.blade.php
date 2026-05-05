@@ -57,6 +57,11 @@
         </div>
     @endforeach
 
+    <!-- Empty State -->
+    @if(count($tasks) === 0)
+        <p class="text-center text-gray-400 text-sm py-4">No tasks yet. Add one above!</p>
+    @endif
+
 </div>
 
 </body>
