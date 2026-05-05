@@ -8,7 +8,16 @@
 
 <div class="max-w-xl mx-auto mt-10 bg-white p-6 rounded shadow">
 
-    <h1 class="text-2xl font-bold mb-4">Task Manager</h1>
+    <!-- Header with Logout -->
+    <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold">Task Manager</h1>
+        <form method="POST" action="/logout">
+            @csrf
+            <button class="text-sm text-red-500 hover:underline">
+                Logout
+            </button>
+        </form>
+    </div>
 
     <!-- Add Task -->
     <form method="POST" action="/tasks" class="flex gap-2 mb-4">
